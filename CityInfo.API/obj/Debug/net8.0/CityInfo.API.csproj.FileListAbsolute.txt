@@ -33,3 +33,4 @@ C:\Users\'Seyi\Desktop\REPO\CityInfo\CityInfo.API\obj\Debug\net8.0\refint\CityIn
 C:\Users\'Seyi\Desktop\REPO\CityInfo\CityInfo.API\obj\Debug\net8.0\CityInfo.API.pdb
 C:\Users\'Seyi\Desktop\REPO\CityInfo\CityInfo.API\obj\Debug\net8.0\CityInfo.API.genruntimeconfig.cache
 C:\Users\'Seyi\Desktop\REPO\CityInfo\CityInfo.API\obj\Debug\net8.0\ref\CityInfo.API.dll
+C:\Users\'Seyi\Desktop\REPO\CityInfo\CityInfo.API\obj\Debug\net8.0\CityInfo.API.sourcelink.json

@@ -4,6 +4,19 @@
     "title": "CityInfo.API",
     "version": "1.0"
   },
-  "paths": { },
+  "paths": {
+    "/api/cities": {
+      "get": {
+        "tags": [
+          "Cities"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
   "components": { }
 }
