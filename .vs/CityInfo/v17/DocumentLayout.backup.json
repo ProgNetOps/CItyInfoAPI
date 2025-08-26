@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|c:\\users\\\u0027seyi\\desktop\\repo\\cityinfo\\cityinfo.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|c:\\users\\\u0027seyi\\desktop\\repo\\cityinfo\\cityinfo.api\\controllers\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\controllers\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|c:\\users\\\u0027seyi\\desktop\\repo\\cityinfo\\cityinfo.api\\models\\citydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,10 +13,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|c:\\users\\\u0027seyi\\desktop\\repo\\cityinfo\\cityinfo.api\\models\\citiesdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\models\\citiesdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|c:\\users\\\u0027seyi\\desktop\\repo\\cityinfo\\cityinfo.api\\controllers\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\controllers\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|c:\\users\\\u0027seyi\\desktop\\repo\\cityinfo\\cityinfo.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -44,7 +40,7 @@
               "RelativeDocumentMoniker": "CityInfo.API\\Models\\CitiesDataStore.cs",
               "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Models\\CitiesDataStore.cs",
               "RelativeToolTip": "CityInfo.API\\Models\\CitiesDataStore.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwAoAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-25T11:29:10.047Z",
               "EditorCaption": ""
@@ -57,7 +53,7 @@
               "RelativeDocumentMoniker": "CityInfo.API\\Models\\CityDto.cs",
               "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Models\\CityDto.cs",
               "RelativeToolTip": "CityInfo.API\\Models\\CityDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-25T10:59:50.908Z",
               "EditorCaption": ""
@@ -65,44 +61,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "CityInfo.API\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "CityInfo.API\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-25T10:40:37.923Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "CitiesController.cs",
               "DocumentMoniker": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Controllers\\CitiesController.cs",
               "RelativeDocumentMoniker": "CityInfo.API\\Controllers\\CitiesController.cs",
               "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Controllers\\CitiesController.cs",
               "RelativeToolTip": "CityInfo.API\\Controllers\\CitiesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-21T12:36:38.095Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Program.cs",
               "RelativeDocumentMoniker": "CityInfo.API\\Program.cs",
               "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Program.cs",
               "RelativeToolTip": "CityInfo.API\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAApwB0AAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-20T15:23:43.829Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "CityInfo.API.csproj",
               "DocumentMoniker": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\CityInfo.API.csproj",
               "RelativeDocumentMoniker": "CityInfo.API\\CityInfo.API.csproj",
