@@ -17,6 +17,7 @@ public class LandmarkController : ControllerBase
         return city is null ? NotFound(city) : Ok(city.Landmarks);
     }
 
+
     [HttpGet("{landmarkId}")]
     public ActionResult<LandmarkDto> GetLandmark(int cityId, int landmarkId)
     {
@@ -24,7 +25,8 @@ public class LandmarkController : ControllerBase
 
         var landmark = city.Landmarks.FirstOrDefault(x => x.Id == landmarkId);
 
-        return city is null || landmark is null ? NotFound(landmark)
+        return city is null || landmark is null
+            ?NotFound(landmark)
             : Ok(landmark);
     }
 
