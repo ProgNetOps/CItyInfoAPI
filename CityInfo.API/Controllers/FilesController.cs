@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.StaticFiles;
 
 namespace CityInfo.API.Controllers;
 
@@ -7,21 +8,36 @@ namespace CityInfo.API.Controllers;
 [ApiController]
 public class FilesController : ControllerBase
 {
+
+    private readonly FileExtensionContentTypeProvider _fileExtensionContentTypeProvider;
+
+    public FilesController(FileExtensionContentTypeProvider fileExtensionContentTypeProvider)
+    {
+        _fileExtensionContentTypeProvider = fileExtensionContentTypeProvider
+            ?? throw new ArgumentNullException(nameof(fileExtensionContentTypeProvider));
+    }
+
     [HttpGet("{fileId}")]
     public ActionResult GetFile(string fileId)
-    {
+    {        
+
         //Look up the actual file depending on the fileId
-        var pathToFile = "skipper.pdf";
+        var pathToFile = "Skipper.pdf";
 
         //check if the file exists
         if(System.IO.File.Exists(pathToFile) is false)
         {
             return NotFound();
         }
-        else
+
+        //Get the file type
+        if(_fileExtensionContentTypeProvider.TryGetContentType(pathToFile,out var contentType) is false)
         {
-            var bytes = System.IO.File.ReadAllBytes(pathToFile);
-            return File(bytes, "text/plain", Path.GetFileName(pathToFile));
+            contentType = "application/octet-stream";//the default media type for arbitrary binary data
         }
+        
+            var bytes = System.IO.File.ReadAllBytes(pathToFile);
+            return File(bytes, contentType, Path.GetFileName(pathToFile));
+        
     }
 }
