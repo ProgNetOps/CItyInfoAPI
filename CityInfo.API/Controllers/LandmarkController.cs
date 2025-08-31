@@ -30,4 +30,20 @@ public class LandmarkController : ControllerBase
             : Ok(landmark);
     }
 
+    [HttpPost]
+    public ActionResult<LandmarkDto> CreateLandmark(int cityId, LandmarkForCreationDto landmark)
+    {
+        var city = CitiesDataStore.Current.Cities.FirstOrDefault(city =>  city.Id == cityId);
+
+        if(city is null)
+        {
+            return NotFound(city);
+        }
+
+        //DEMO PURPOSE - TO BE IMPROVED
+        //Find the max id, then add 1 to it
+        var maxLandmarkId = CitiesDataStore.Current.Cities.SelectMany(c => c.Landmarks).Max
+
+    }
+
 }
