@@ -39,6 +39,39 @@
   },
   {
     "ContainingType": "CityInfo.API.Controllers.LandmarkController",
+    "Method": "CreateLandmark",
+    "RelativePath": "api/cities/{cityId}/landmarks",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cityId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "landmark",
+        "Type": "CityInfo.API.Models.LandmarkForCreationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CityInfo.API.Models.LandmarkDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CityInfo.API.Controllers.LandmarkController",
     "Method": "GetLandmark",
     "RelativePath": "api/cities/{cityId}/landmarks/{landmarkId}",
     "HttpMethod": "GET",

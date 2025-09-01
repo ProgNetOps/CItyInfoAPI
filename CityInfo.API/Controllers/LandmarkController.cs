@@ -18,7 +18,7 @@ public class LandmarkController : ControllerBase
     }
 
 
-    [HttpGet("{landmarkId}")]
+    [HttpGet("{landmarkId}", Name = "GetLandmark")]
     public ActionResult<LandmarkDto> GetLandmark(int cityId, int landmarkId)
     {
         var city = CitiesDataStore.Current.Cities.FirstOrDefault(x => x.Id == cityId);
@@ -29,6 +29,7 @@ public class LandmarkController : ControllerBase
             ?NotFound(landmark)
             : Ok(landmark);
     }
+
 
     [HttpPost]
     public ActionResult<LandmarkDto> CreateLandmark(int cityId, LandmarkForCreationDto landmark)
@@ -41,8 +42,25 @@ public class LandmarkController : ControllerBase
         }
 
         //DEMO PURPOSE - TO BE IMPROVED
-        //Find the max id, then add 1 to it
-        var maxLandmarkId = CitiesDataStore.Current.Cities.SelectMany(c => c.Landmarks).Max
+        //Find the current max landmark id, then, add 1 to it for the new landmark 
+        var maxLandmarkId = CitiesDataStore.Current.Cities.SelectMany(c => c.Landmarks).Max(x=>x.Id);
+
+        var latestLandmark = new LandmarkDto
+        {
+            Id = ++maxLandmarkId,
+            Name = landmark.Name,
+            Description = landmark.Description
+        };
+
+        city.Landmarks.Add(latestLandmark);
+
+        return CreatedAtRoute("GetLandmark",
+            new
+            {
+                cityId = cityId,
+                landmarkId = latestLandmark.Id
+            },
+            latestLandmark);
 
     }
 
