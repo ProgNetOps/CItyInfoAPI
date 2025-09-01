@@ -101,7 +101,8 @@
         ],
         "StatusCode": 200
       }
-    ]
+    ],
+    "EndpointName": "GetLandmark"
   },
   {
     "ContainingType": "CityInfo.API.Controllers.CitiesController",

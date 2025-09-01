@@ -241,6 +241,7 @@
         "tags": [
           "Landmark"
         ],
+        "operationId": "GetLandmark",
         "parameters": [
           {
             "name": "cityId",
@@ -347,13 +348,18 @@
         "additionalProperties": false
       },
       "LandmarkForCreationDto": {
+        "required": [
+          "name"
+        ],
         "type": "object",
         "properties": {
           "name": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
           },
           "description": {
+            "maxLength": 200,
             "type": "string",
             "nullable": true
           }

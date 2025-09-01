@@ -34,21 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CitiesController.cs",
-              "DocumentMoniker": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Controllers\\CitiesController.cs",
-              "RelativeDocumentMoniker": "CityInfo.API\\Controllers\\CitiesController.cs",
-              "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Controllers\\CitiesController.cs",
-              "RelativeToolTip": "CityInfo.API\\Controllers\\CitiesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T09:28:20.771Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
@@ -57,10 +44,9 @@
               "RelativeDocumentMoniker": "CityInfo.API\\Models\\CitiesDataStore.cs",
               "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Models\\CitiesDataStore.cs",
               "RelativeToolTip": "CityInfo.API\\Models\\CitiesDataStore.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAwwBMAAACMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T09:16:13.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T09:16:13.424Z"
             },
             {
               "$type": "Document",
@@ -70,10 +56,9 @@
               "RelativeDocumentMoniker": "CityInfo.API\\Models\\LandmarkForCreationDto.cs",
               "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Models\\LandmarkForCreationDto.cs",
               "RelativeToolTip": "CityInfo.API\\Models\\LandmarkForCreationDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-31T05:43:44.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-31T05:43:44.547Z"
             },
             {
               "$type": "Document",
@@ -83,7 +68,7 @@
               "RelativeDocumentMoniker": "CityInfo.API\\Controllers\\LandmarkController.cs",
               "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Controllers\\LandmarkController.cs",
               "RelativeToolTip": "CityInfo.API\\Controllers\\LandmarkController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAqwBMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-27T14:38:09.882Z",
               "EditorCaption": ""
@@ -96,10 +81,21 @@
               "RelativeDocumentMoniker": "CityInfo.API\\Controllers\\FilesController.cs",
               "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Controllers\\FilesController.cs",
               "RelativeToolTip": "CityInfo.API\\Controllers\\FilesController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwA8AAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T09:28:25.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T09:28:25.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CitiesController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Controllers\\CitiesController.cs",
+              "RelativeDocumentMoniker": "CityInfo.API\\Controllers\\CitiesController.cs",
+              "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Controllers\\CitiesController.cs",
+              "RelativeToolTip": "CityInfo.API\\Controllers\\CitiesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T09:28:20.771Z"
             },
             {
               "$type": "Document",
