@@ -105,6 +105,32 @@
     "EndpointName": "GetLandmark"
   },
   {
+    "ContainingType": "CityInfo.API.Controllers.LandmarkController",
+    "Method": "UpdateLandmarkDto",
+    "RelativePath": "api/cities/{cityId}/landmarks/{landMarkId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cityId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "landMarkId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "landmark",
+        "Type": "CityInfo.API.Models.LandmarkForUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CityInfo.API.Controllers.CitiesController",
     "Method": "GetCity",
     "RelativePath": "api/cities/{id}",

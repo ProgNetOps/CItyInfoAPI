@@ -34,6 +34,7 @@ public class LandmarkController : ControllerBase
     [HttpPost]
     public ActionResult<LandmarkDto> CreateLandmark(int cityId, LandmarkForCreationDto landmark)
     {
+        //Find city
         var city = CitiesDataStore.Current.Cities.FirstOrDefault(city =>  city.Id == cityId);
 
         if(city is null)
@@ -54,13 +55,40 @@ public class LandmarkController : ControllerBase
 
         city.Landmarks.Add(latestLandmark);
 
-        return CreatedAtRoute("GetLandmark",
+        return CreatedAtRoute(nameof(GetLandmark),
             new
             {
                 cityId = cityId,
                 landmarkId = latestLandmark.Id
             },
             latestLandmark);
+
+    }
+
+    [HttpPut("{landMarkId}")]
+    public ActionResult UpdateLandmarkDto(int cityId, int landMarkId, LandmarkForUpdateDto landmark)
+    {
+        //Find city
+        var city = CitiesDataStore.Current.Cities.FirstOrDefault(city => city.Id == cityId);
+
+        if (city is null)
+        {
+            return NotFound();
+        }
+
+        //Find Landmark
+        var landmarkFromStore = city.Landmarks.FirstOrDefault(x => x.Id == landMarkId);
+        if (landmarkFromStore is null)
+        {
+            return NotFound();
+        }
+
+        //Update the fields
+        landmarkFromStore.Name = landmark.Name;
+        landmarkFromStore.Description = landmark.Description;
+
+        return NoContent(); //A 204 No Content
+
 
     }
 
