@@ -78,6 +78,7 @@ public class LandmarkController : ControllerBase
 
         //Find Landmark
         var landmarkFromStore = city.Landmarks.FirstOrDefault(x => x.Id == landMarkId);
+
         if (landmarkFromStore is null)
         {
             return NotFound();
@@ -88,7 +89,6 @@ public class LandmarkController : ControllerBase
         landmarkFromStore.Description = landmark.Description;
 
         return NoContent(); //A 204 No Content
-
 
     }
 
