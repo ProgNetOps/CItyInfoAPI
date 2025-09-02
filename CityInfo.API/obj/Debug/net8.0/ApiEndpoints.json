@@ -106,6 +106,53 @@
   },
   {
     "ContainingType": "CityInfo.API.Controllers.LandmarkController",
+    "Method": "PartiallyUpdateLandmark",
+    "RelativePath": "api/cities/{cityId}/landmarks/{landmarkId}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cityId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "landmarkId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "patchDocument",
+        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CityInfo.API.Controllers.LandmarkController",
+    "Method": "DeleteLandmark",
+    "RelativePath": "api/cities/{cityId}/landmarks/{landmarkId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cityId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "landmarkId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CityInfo.API.Controllers.LandmarkController",
     "Method": "UpdateLandmarkDto",
     "RelativePath": "api/cities/{cityId}/landmarks/{landMarkId}",
     "HttpMethod": "PUT",

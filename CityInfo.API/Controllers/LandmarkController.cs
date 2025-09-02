@@ -1,5 +1,6 @@
 ﻿using CityInfo.API.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CityInfo.API.Controllers;
@@ -92,4 +93,73 @@ public class LandmarkController : ControllerBase
 
     }
 
+
+    [HttpPatch("{landmarkId}")]
+    public ActionResult PartiallyUpdateLandmark(int cityId, int landmarkId, JsonPatchDocument<LandmarkForUpdateDto> patchDocument)
+    {
+        //Find city
+        var city = CitiesDataStore.Current.Cities.FirstOrDefault(city => city.Id == cityId);
+
+        if (city is null)
+        {
+            return NotFound();
+        }
+
+        var landmarkFromStore = city.Landmarks.FirstOrDefault(x => x.Id ==landmarkId);
+
+        if(landmarkFromStore is null)
+        {
+            return NotFound();
+        }
+
+        var landmarkToPatch = new LandmarkForUpdateDto
+        {
+            Name = landmarkFromStore.Name,
+            Description = landmarkFromStore.Description
+        };
+
+        //Apply the patch document
+        patchDocument.ApplyTo(landmarkToPatch, ModelState);
+
+        if(ModelState.IsValid is false)
+        {
+            return BadRequest(ModelState);
+        }
+
+        if(TryValidateModel(landmarkToPatch) is false)
+        {
+            return BadRequest(ModelState);
+        }
+
+        //Update the fields
+        landmarkFromStore.Name = landmarkToPatch.Name;
+        landmarkFromStore.Description = landmarkToPatch.Description;
+
+
+        return NoContent();
+    }
+
+
+    [HttpDelete("{landmarkId}")]
+    public ActionResult DeleteLandmark(int cityId, int landmarkId)
+    {
+        //Find city
+        var city = CitiesDataStore.Current.Cities.FirstOrDefault(city => city.Id == cityId);
+
+        if (city is null)
+        {
+            return NotFound();
+        }
+
+        var landmarkFromStore = city.Landmarks.FirstOrDefault(x => x.Id == landmarkId);
+
+        if (landmarkFromStore is null)
+        {
+            return NotFound();
+        }
+
+        city.Landmarks.Remove(landmarkFromStore);
+
+        return NoContent();
+    }
 }
