@@ -11,20 +11,12 @@
       "RelativeMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\controllers\\landmarkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|c:\\users\\\u0027seyi\\desktop\\repo\\cityinfo\\cityinfo.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|c:\\users\\\u0027seyi\\desktop\\repo\\cityinfo\\cityinfo.api\\models\\citiesdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\models\\citiesdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|c:\\users\\\u0027seyi\\desktop\\repo\\cityinfo\\cityinfo.api\\models\\landmarkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\models\\landmarkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|c:\\users\\\u0027seyi\\desktop\\repo\\cityinfo\\cityinfo.api\\models\\citydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\models\\citydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|c:\\users\\\u0027seyi\\desktop\\repo\\cityinfo\\cityinfo.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\appsettings.json",
               "RelativeDocumentMoniker": "CityInfo.API\\appsettings.json",
@@ -61,14 +53,14 @@
               "RelativeDocumentMoniker": "CityInfo.API\\Program.cs",
               "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Program.cs",
               "RelativeToolTip": "CityInfo.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-02T13:34:59.175Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "CitiesDataStore.cs",
               "DocumentMoniker": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Models\\CitiesDataStore.cs",
               "RelativeDocumentMoniker": "CityInfo.API\\Models\\CitiesDataStore.cs",
@@ -87,35 +79,9 @@
               "RelativeDocumentMoniker": "CityInfo.API\\Controllers\\LandmarkController.cs",
               "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Controllers\\LandmarkController.cs",
               "RelativeToolTip": "CityInfo.API\\Controllers\\LandmarkController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwB8AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-27T14:38:09.882Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CityDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Models\\CityDto.cs",
-              "RelativeDocumentMoniker": "CityInfo.API\\Models\\CityDto.cs",
-              "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Models\\CityDto.cs",
-              "RelativeToolTip": "CityInfo.API\\Models\\CityDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T06:18:55.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LandmarkDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Models\\LandmarkDto.cs",
-              "RelativeDocumentMoniker": "CityInfo.API\\Models\\LandmarkDto.cs",
-              "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Models\\LandmarkDto.cs",
-              "RelativeToolTip": "CityInfo.API\\Models\\LandmarkDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-02T03:39:44.812Z",
               "EditorCaption": ""
             }
           ]

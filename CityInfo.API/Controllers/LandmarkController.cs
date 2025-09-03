@@ -16,16 +16,31 @@ public class LandmarkController(ILogger<LandmarkController> logger) : Controller
     [HttpGet]
     public ActionResult<IEnumerable<LandmarkDto>> GetLandmarks(int cityId)
     {
-        var city = CitiesDataStore.Current.Cities.FirstOrDefault(x => x.Id == cityId);
+        try
+        {
+            //throw new Exception("Sample exception");
+            var city = CitiesDataStore.Current.Cities.FirstOrDefault(x => x.Id == cityId);
 
-        if(city is null)
-        {
-            _logger.LogInformation($"City with id {cityId} was not found when accessing landmarks");
-            return NotFound(city);
+            if (city is null)
+            {
+                _logger.LogInformation($"City with id {cityId} was not found when accessing landmarks");
+                return NotFound(city);
+            }
+            else
+            {
+                return Ok(city.Landmarks);
+            }
         }
-        else
+        catch (Exception ex)
         {
-            return Ok(city.Landmarks);
+            string logMessage = $"Exception while getting  landmarks for city with id, {cityId}.";
+
+            string exceptionMessage = "A problem occured while handling your request.";
+            
+            _logger.LogCritical(logMessage,ex);
+
+            //Ensure the exceptionMessage is simple and it does not expose anything to the consumer.
+            return StatusCode(500, exceptionMessage);
         }
     }
 

@@ -1,13 +1,26 @@
 using Microsoft.AspNetCore.StaticFiles;
+using Serilog;
+
+
+//Configure Serilog
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.Console()
+    .WriteTo.File("logs/cityinfo.txt", rollingInterval:RollingInterval.Day)
+    .CreateLogger();
 
 var builder = WebApplication.CreateBuilder(args);
 
 //Manually configuring logging
-builder.Logging.ClearProviders(); //Remove the default logger
-builder.Logging.AddConsole(); //Adding console logger
+/*builder.Logging.ClearProviders(); //Remove the default logger
+builder.Logging.AddConsole(); //Adding console logger*/
+
+
+//Tell asp.net core to use Serilog instead of the in-built logger
+builder.Host.UseSerilog();
+
 
 // Add services to the container.
-
 builder.Services.AddControllers(options =>
 {
     options.ReturnHttpNotAcceptable = true;
