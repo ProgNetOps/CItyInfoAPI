@@ -7,15 +7,26 @@ namespace CityInfo.API.Controllers;
 
 [Route("api/cities/{cityId}/landmarks")]
 [ApiController]
-public class LandmarkController : ControllerBase
+public class LandmarkController(ILogger<LandmarkController> logger) : ControllerBase
 {
+    private readonly ILogger<LandmarkController> _logger = logger;
+
+
 
     [HttpGet]
     public ActionResult<IEnumerable<LandmarkDto>> GetLandmarks(int cityId)
     {
         var city = CitiesDataStore.Current.Cities.FirstOrDefault(x => x.Id == cityId);
 
-        return city is null ? NotFound(city) : Ok(city.Landmarks);
+        if(city is null)
+        {
+            _logger.LogInformation($"City with id {cityId} was not found when accessing landmarks");
+            return NotFound(city);
+        }
+        else
+        {
+            return Ok(city.Landmarks);
+        }
     }
 
 
@@ -24,7 +35,7 @@ public class LandmarkController : ControllerBase
     {
         var city = CitiesDataStore.Current.Cities.FirstOrDefault(x => x.Id == cityId);
 
-        var landmark = city.Landmarks.FirstOrDefault(x => x.Id == landmarkId);
+        var landmark = city?.Landmarks?.FirstOrDefault(x => x.Id == landmarkId);
 
         return city is null || landmark is null
             ?NotFound(landmark)
@@ -56,6 +67,7 @@ public class LandmarkController : ControllerBase
 
         city.Landmarks.Add(latestLandmark);
 
+        //The first parameter is the 'Name' value passed in the Http verb of the action method referred to
         return CreatedAtRoute(nameof(GetLandmark),
             new
             {
