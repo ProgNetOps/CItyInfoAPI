@@ -1,18 +1,17 @@
-﻿namespace CityInfo.API.Services
+﻿namespace CityInfo.API.Services;
+
+public class LocalMailService : IMailService
 {
-    public class LocalMailService
+    private string _mailTo = "admin@mycompany.com";
+    private string _mailFrom = "noreply@mycompany.com";
+
+    public void Send(string subject, string message)
     {
-        private string _mailTo = "admin@mycompany.com";
-        private string _mailFrom = "noreply@mycompany.com";
+        //send mail - output to console window
+        Console.WriteLine($"Mail from {_mailFrom} to {_mailTo} with {nameof(LocalMailService)}");
 
-        public void Send(string subject, string message)
-        {
-            //send mail - output to console window
-            Console.WriteLine($"Mail from {_mailFrom} to {_mailTo} with {nameof(LocalMailService)}");
+        Console.WriteLine($"Subject: {subject}");
 
-            Console.WriteLine($"Subject: {subject}");
-
-            Console.WriteLine($"Message: {message}");
-        }
+        Console.WriteLine($"Message: {message}");
     }
 }

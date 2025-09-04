@@ -1,3 +1,4 @@
+using CityInfo.API.Models;
 using CityInfo.API.Services;
 using Microsoft.AspNetCore.StaticFiles;
 using Serilog;
@@ -36,7 +37,15 @@ builder.Services.AddSwaggerGen();
 //Add service to check file types
 builder.Services.AddSingleton<FileExtensionContentTypeProvider>();
 
-builder.Services.AddTransient<LocalMailService>();
+//Use preprocessor directives to select a service
+#if DEBUG
+builder.Services.AddTransient<IMailService,LocalMailService>();
+#else
+builder.Services.AddTransient<IMailService,CloudMailService>();
+#endif
+
+//Add a singleton service so we don't need to use the static "Current" property to get an instance of the class
+builder.Services.AddSingleton<CitiesDataStore>();
 
 var app = builder.Build();
 

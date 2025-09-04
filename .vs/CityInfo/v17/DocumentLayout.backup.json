@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|c:\\users\\\u0027seyi\\desktop\\repo\\cityinfo\\cityinfo.api\\controllers\\landmarkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\controllers\\landmarkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|c:\\users\\\u0027seyi\\desktop\\repo\\cityinfo\\cityinfo.api\\models\\citiesdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\models\\citiesdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|c:\\users\\\u0027seyi\\desktop\\repo\\cityinfo\\cityinfo.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|c:\\users\\\u0027seyi\\desktop\\repo\\cityinfo\\cityinfo.api\\controllers\\landmarkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\controllers\\landmarkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|c:\\users\\\u0027seyi\\desktop\\repo\\cityinfo\\cityinfo.api\\services\\cloudmailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\services\\cloudmailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|c:\\users\\\u0027seyi\\desktop\\repo\\cityinfo\\cityinfo.api\\services\\localmailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\services\\localmailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|c:\\users\\\u0027seyi\\desktop\\repo\\cityinfo\\cityinfo.api\\models\\citiesdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\models\\citiesdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|c:\\users\\\u0027seyi\\desktop\\repo\\cityinfo\\cityinfo.api\\services\\imailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4943A9B5-716F-4FE0-A8DB-3F7FB229C66F}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\services\\imailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CloudMailService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Services\\CloudMailService.cs",
+              "RelativeDocumentMoniker": "CityInfo.API\\Services\\CloudMailService.cs",
+              "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Services\\CloudMailService.cs",
+              "RelativeToolTip": "CityInfo.API\\Services\\CloudMailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T02:54:33.216Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -40,48 +61,62 @@
               "RelativeDocumentMoniker": "CityInfo.API\\Program.cs",
               "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Program.cs",
               "RelativeToolTip": "CityInfo.API\\Program.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAABwAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-02T13:34:59.175Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "LandmarkController.cs",
               "DocumentMoniker": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Controllers\\LandmarkController.cs",
               "RelativeDocumentMoniker": "CityInfo.API\\Controllers\\LandmarkController.cs",
               "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Controllers\\LandmarkController.cs",
               "RelativeToolTip": "CityInfo.API\\Controllers\\LandmarkController.cs",
-              "ViewState": "AgIAAKEAAAAAAAAAAAAcwLoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAcwLQAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-27T14:38:09.882Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LocalMailService.cs",
-              "DocumentMoniker": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Services\\LocalMailService.cs",
-              "RelativeDocumentMoniker": "CityInfo.API\\Services\\LocalMailService.cs",
-              "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Services\\LocalMailService.cs",
-              "RelativeToolTip": "CityInfo.API\\Services\\LocalMailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-04T02:23:24.624Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "CitiesDataStore.cs",
               "DocumentMoniker": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Models\\CitiesDataStore.cs",
               "RelativeDocumentMoniker": "CityInfo.API\\Models\\CitiesDataStore.cs",
               "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Models\\CitiesDataStore.cs",
               "RelativeToolTip": "CityInfo.API\\Models\\CitiesDataStore.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAACMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T09:16:13.424Z"
+              "WhenOpened": "2025-09-01T09:16:13.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IMailService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Services\\IMailService.cs",
+              "RelativeDocumentMoniker": "CityInfo.API\\Services\\IMailService.cs",
+              "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Services\\IMailService.cs",
+              "RelativeToolTip": "CityInfo.API\\Services\\IMailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T02:52:08.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LocalMailService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Services\\LocalMailService.cs",
+              "RelativeDocumentMoniker": "CityInfo.API\\Services\\LocalMailService.cs",
+              "ToolTip": "C:\\Users\\\u0027Seyi\\Desktop\\REPO\\CityInfo\\CityInfo.API\\Services\\LocalMailService.cs",
+              "RelativeToolTip": "CityInfo.API\\Services\\LocalMailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T02:23:24.624Z",
+              "EditorCaption": ""
             }
           ]
         }

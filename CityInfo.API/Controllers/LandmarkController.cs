@@ -9,10 +9,12 @@ namespace CityInfo.API.Controllers;
 [Route("api/cities/{cityId}/landmarks")]
 [ApiController]
 public class LandmarkController(ILogger<LandmarkController> logger,
-    LocalMailService mailService) : ControllerBase
+    IMailService mailService,
+    CitiesDataStore citiesDataStore) : ControllerBase
 {
     private readonly ILogger<LandmarkController> _logger = logger;
-    private readonly LocalMailService _mailService = mailService;
+    private readonly IMailService _mailService = mailService;
+    private readonly CitiesDataStore _citiesDataStore = citiesDataStore;
 
 
 
@@ -22,7 +24,7 @@ public class LandmarkController(ILogger<LandmarkController> logger,
         try
         {
             //throw new Exception("Sample exception");
-            var city = CitiesDataStore.Current.Cities.FirstOrDefault(x => x.Id == cityId);
+            var city = _citiesDataStore.Cities.FirstOrDefault(x => x.Id == cityId);
 
             if (city is null)
             {
@@ -51,7 +53,7 @@ public class LandmarkController(ILogger<LandmarkController> logger,
     [HttpGet("{landmarkId}", Name = "GetLandmark")]
     public ActionResult<LandmarkDto> GetLandmark(int cityId, int landmarkId)
     {
-        var city = CitiesDataStore.Current.Cities.FirstOrDefault(x => x.Id == cityId);
+        var city = _citiesDataStore.Cities.FirstOrDefault(x => x.Id == cityId);
 
         var landmark = city?.Landmarks?.FirstOrDefault(x => x.Id == landmarkId);
 
@@ -65,7 +67,7 @@ public class LandmarkController(ILogger<LandmarkController> logger,
     public ActionResult<LandmarkDto> CreateLandmark(int cityId, LandmarkForCreationDto landmark)
     {
         //Find city
-        var city = CitiesDataStore.Current.Cities.FirstOrDefault(city =>  city.Id == cityId);
+        var city = _citiesDataStore.Cities.FirstOrDefault(city =>  city.Id == cityId);
 
         if(city is null)
         {
@@ -74,7 +76,7 @@ public class LandmarkController(ILogger<LandmarkController> logger,
 
         //DEMO PURPOSE - TO BE IMPROVED
         //Find the current max landmark id, then, add 1 to it for the new landmark 
-        var maxLandmarkId = CitiesDataStore.Current.Cities.SelectMany(c => c.Landmarks).Max(x=>x.Id);
+        var maxLandmarkId = _citiesDataStore.Cities.SelectMany(c => c.Landmarks).Max(x=>x.Id);
 
         var latestLandmark = new LandmarkDto
         {
@@ -100,7 +102,7 @@ public class LandmarkController(ILogger<LandmarkController> logger,
     public ActionResult UpdateLandmarkDto(int cityId, int landMarkId, LandmarkForUpdateDto landmark)
     {
         //Find city
-        var city = CitiesDataStore.Current.Cities.FirstOrDefault(city => city.Id == cityId);
+        var city = _citiesDataStore.Cities.FirstOrDefault(city => city.Id == cityId);
 
         if (city is null)
         {
@@ -128,7 +130,7 @@ public class LandmarkController(ILogger<LandmarkController> logger,
     public ActionResult PartiallyUpdateLandmark(int cityId, int landmarkId, JsonPatchDocument<LandmarkForUpdateDto> patchDocument)
     {
         //Find city
-        var city = CitiesDataStore.Current.Cities.FirstOrDefault(city => city.Id == cityId);
+        var city = _citiesDataStore.Cities.FirstOrDefault(city => city.Id == cityId);
 
         if (city is null)
         {
@@ -174,7 +176,7 @@ public class LandmarkController(ILogger<LandmarkController> logger,
     public ActionResult DeleteLandmark(int cityId, int landmarkId)
     {
         //Find city
-        var city = CitiesDataStore.Current.Cities.FirstOrDefault(city => city.Id == cityId);
+        var city = _citiesDataStore.Cities.FirstOrDefault(city => city.Id == cityId);
 
         if (city is null)
         {
