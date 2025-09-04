@@ -1,4 +1,5 @@
 ﻿using CityInfo.API.Models;
+using CityInfo.API.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
@@ -7,9 +8,11 @@ namespace CityInfo.API.Controllers;
 
 [Route("api/cities/{cityId}/landmarks")]
 [ApiController]
-public class LandmarkController(ILogger<LandmarkController> logger) : ControllerBase
+public class LandmarkController(ILogger<LandmarkController> logger,
+    LocalMailService mailService) : ControllerBase
 {
     private readonly ILogger<LandmarkController> _logger = logger;
+    private readonly LocalMailService _mailService = mailService;
 
 
 
@@ -187,6 +190,10 @@ public class LandmarkController(ILogger<LandmarkController> logger) : Controller
 
         city.Landmarks.Remove(landmarkFromStore);
 
+        _mailService.Send("Landmark deleted.", $"Landmark {landmarkFromStore.Name} with Id {landmarkId} was deleted.");
+
         return NoContent();
     }
+
+
 }
