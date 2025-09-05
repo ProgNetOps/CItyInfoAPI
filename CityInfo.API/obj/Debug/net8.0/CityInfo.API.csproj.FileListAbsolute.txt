@@ -49,3 +49,4 @@ C:\Users\'Seyi\Desktop\REPO\CityInfo\CityInfo.API\bin\Debug\net8.0\Serilog.Setti
 C:\Users\'Seyi\Desktop\REPO\CityInfo\CityInfo.API\bin\Debug\net8.0\Serilog.Sinks.Console.dll
 C:\Users\'Seyi\Desktop\REPO\CityInfo\CityInfo.API\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 C:\Users\'Seyi\Desktop\REPO\CityInfo\CityInfo.API\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\Users\'Seyi\Desktop\REPO\CityInfo\CityInfo.API\bin\Debug\net8.0\appsettings.Production.json
