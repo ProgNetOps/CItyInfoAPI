@@ -8,6 +8,6 @@ public class CityDto
 
     public int NumberOfLandmarks => Landmarks.Count;
 
-    public ICollection<LandmarkDto>? Landmarks { get; set; } = [];
+    public ICollection<LandmarkDto> Landmarks { get; set; } = [];
 }
 

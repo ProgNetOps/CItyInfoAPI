@@ -9,8 +9,6 @@ public class CitiesController(CitiesDataStore citiesDataStore) : ControllerBase
 {
     private readonly CitiesDataStore _citiesDataStore = citiesDataStore;
 
-
-
     [HttpGet]
     public IActionResult GetCities()
     {
